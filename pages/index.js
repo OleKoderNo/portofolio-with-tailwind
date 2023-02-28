@@ -2,10 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Selfie from '../public/pic_of_ole.jpg'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [fornyCard, setFornyCard] = useState(true)
+  const [bawCard, setBawCard] = useState(false)
+  const [kvbCard, setKvbCard] = useState(false)
+
+  function DeactivateState() {
+    setFornyCard(false)
+    setBawCard(false)
+    setKvbCard(false)
+  }
+
   return (
     <>
       <Head>
@@ -25,69 +37,174 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-      <header>
-        <h1>
+      <header
+      className='pb-8 mx-auto font-bold text-center'
+      >
+        <h1
+        className='text-xl'
+        >
           Ole Håvard Furuseth Bergan
         </h1>
-        <h2>
+        <h2
+        className='text-l '
+        >
           Frontend utvikler
         </h2>
       </header>
       <main>
+        <div>
+
         <section 
-          className=' bg-cardBG text-greyText w-64 py-6'
-        >
+          className='w-64 py-6 pl-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)]'
+          >
           <p>
             &lt;
             <span 
                 className=' text-pinkText'
-            >
+                >
               Developer
             </span>
           </p>
-          <p>
+          <p
+          className='pl-3 '
+          >
             id=
           </p>
           <p 
-            className=' text-blueText'
-          >
+            className='pl-3 text-blueText'
+            >
             "Ole Håvard
           </p>
           <p 
-            className=' text-blueText'
-          >
+            className='pl-3 text-blueText'
+            >
             Furuseth Bergan"
           </p>
-          <p>
+          <p
+          className='pl-3'
+          >
             className=
           </p>
           <p 
-            className=' text-blueText'
-          >
+            className='pl-3 text-blueText'
+            >
             "Frontend Developer"
           </p>
           <p>
+            &gt;
+          </p>
+          <p
+          className='pl-3'
+          >
             &lt;
               <span 
                 className=' text-pinkText'
-              >
-                Developer
+                >
+                img
               </span>
             &gt;
           </p>
           <Image
-            src={Selfie}
-            width={146}
+          className='pl-6 drop-shadow-[0px_0_20px_rgba(20,205,200,0.4)]'
+          src={Selfie}
+          width={146}
           />
-          <p>
+          <p
+          className='pl-3'
+          >
             &lt;/ 
               <span 
                 className=' text-pinkText'
-              >
-                Developer
+                >
+                img
               </span>
             &gt;
           </p>
+          <p>
+            &lt;/&nbsp;
+            <span 
+                className=' text-pinkText'
+                >
+              Developer
+            </span>
+            &gt;
+          </p>
+        </section>
+        <section>
+          <nav>
+            <ul>
+              <li
+                onClick={() => {
+                  DeactivateState()
+                  setFornyCard(true)
+                }}
+              >
+                Forny Norge
+              </li>
+              <li
+              onClick={() => {
+                DeactivateState()
+                setBawCard(true)
+              }}
+              >
+                Bergen Armwrestling
+              </li>
+              <li
+              onClick={() => {
+                DeactivateState()
+                setKvbCard(true)
+              }}
+              >
+                Kodeverket Bergen
+              </li>
+            </ul>
+          </nav>
+          <div>
+          <h2>
+            Noen av mine prosjekter
+          </h2>
+          <div
+          className={` ${fornyCard ? "content" : "hidden"}` }
+          >
+            <h3>
+              Forny Norge
+            </h3>
+          </div>
+          <div
+          className={` ${bawCard ? "content" : "hidden"}` }
+          >
+            <h3>
+              Bergen Armwrestling Club
+            </h3>
+          </div>
+          <div
+          className={` ${kvbCard ? "content" : "hidden"}` }
+          >
+            <h3>
+              Kodeverket Bergen
+            </h3>
+          </div>
+          </div>
+        </section>
+        </div>
+        <section
+        className='flex flex-col items-center gap-4 pt-5'
+        >
+          <button
+          className='w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]'
+          >
+            Om meg
+          </button>
+          <button
+          className='w-[152px] h-10  rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]'
+          >
+            Mine prosjekter
+          </button>
+          <button
+          className='w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]'
+          >
+            Mine erfaringer
+          </button>
         </section>
       </main>
     </>
