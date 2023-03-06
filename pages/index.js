@@ -56,7 +56,9 @@ export default function Home() {
           Frontend utvikler
         </h2>
       </header>
-      <main>
+      <main
+      className="max-w-5xl mx-auto"
+      >
         <div
           className="justify-around md:flex"
         >
