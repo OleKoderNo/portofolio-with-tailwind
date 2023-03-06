@@ -63,39 +63,43 @@ export default function Home() {
           className="justify-around md:flex"
         >
           <section
-            className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px]"
+            
           >
+            <div
+            className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px]"
+            >
+
             <p>
               &lt;
               <span
                 className=" text-pinkText"
-              >
+                >
                 Developer
               </span>
             </p>
             <p
               className="pl-3 "
-            >
+              >
               id=
             </p>
             <p
               className="pl-3 text-blueText"
-            >
+              >
               "Ole Håvard
             </p>
             <p
               className="pl-3 text-blueText"
-            >
+              >
               Furuseth Bergan"
             </p>
             <p
               className="pl-3"
-            >
+              >
               className=
             </p>
             <p
               className="pl-3 text-blueText"
-            >
+              >
               "Frontend Developer"
             </p>
             <p>&gt;</p>
@@ -103,7 +107,7 @@ export default function Home() {
               &lt;
               <span
                 className=" text-pinkText"
-              >
+                >
                 img
               </span>
               &gt;
@@ -112,14 +116,14 @@ export default function Home() {
               className="pl-6 drop-shadow-[0px_0_20px_rgba(20,205,200,0.4)]"
               src={Selfie}
               width={146}
-            />
+              />
             <p
               className="pl-3"
-            >
+              >
               &lt;/
               <span
                 className=" text-pinkText"
-              >
+                >
                 img
               </span>
               &gt;
@@ -128,40 +132,41 @@ export default function Home() {
               &lt;/&nbsp;
               <span
                 className=" text-pinkText"
-              >
+                >
                 Developer
               </span>
               &gt;
             </p>
+            </div>
             <div
-              className="flex flex-col items-center gap-4 pt-10 text-[#000000]"
-            >
+              className="flex flex-col items-center gap-4 pt-10 text-[#000000] h-"
+              >
               <button
                 className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
-              >
+                >
                 Om meg
               </button>
               <button
                 className="w-[152px] h-10  rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
-              >
+                >
                 Mine prosjekter
               </button>
               <button
                 className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
-              >
+                >
                 Mine erfaringer
               </button>
             </div>
           </section>
           <section
             className="hidden w-1/2 md:block"
-          >
+            >
             <div
               className=" border rounded-tl-[20px] rounded-tr-[20px] bg-cardBG"
-            >
+              >
               <h2
                 className="my-4 text-2xl text-center text-pinkText"
-              >
+                >
                 Noen av mine prosjekter
               </h2>
               <nav
