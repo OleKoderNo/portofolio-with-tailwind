@@ -57,7 +57,7 @@ export default function Home() {
         </h2>
       </header>
       <main
-      className="max-w-5xl mx-auto"
+      className="mx-auto max-w-7xl"
       >
         <div
           className="justify-around md:flex"
