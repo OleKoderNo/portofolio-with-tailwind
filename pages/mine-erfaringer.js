@@ -10,7 +10,7 @@ export default function Experience() {
                 </title>
                 <meta
                     name="description"
-                    content="Ole Håvard Furuseth Bergan er en dyktig frontend utvikler som vært litt forskjellige steder, blandt annet hos kodeverket bergen. Han har også kunnskap om universell utforming."
+                    content="Ole Håvard Furuseth Bergan er en dyktig frontend utvikler som har vært litt forskjellige steder, blandt annet hos kodeverket bergen. Han har også kunnskap om universell utforming."
                 />
                 <meta name="viewport"
                     content="width=device-width, initial-scale=1"
