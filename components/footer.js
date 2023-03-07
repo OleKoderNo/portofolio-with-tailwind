@@ -36,6 +36,7 @@ export default function Footer() {
                     className=" hover:text-blueText"
                 >
                     <a
+                    href="https://www.linkedin.com/in/ole-h%C3%A5vard-furuseth-bergan-2a1209255/"
                     >
                         LinkedIn
                     </a>
