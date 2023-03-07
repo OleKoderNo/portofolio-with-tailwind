@@ -289,9 +289,7 @@ export default function Home() {
                   Kodeverket Bergen
                 </h3>
                 <p>
-                  På Kodeverket Bergen har jeg hovedsaklig stått for mobile
-                  first designet på siden. Siden er bygget opp med Next.js og
-                  Tailwind CSS
+                  På Kodeverket Bergen har jeg hovedsaklig stått for mobile first designet på siden. Siden er bygget opp med Next.js og Tailwind CSS
                 </p>
                 <div>
                   <a

@@ -8,23 +8,38 @@ import Image from "next/image"
 export default function Footer() {
     return (
         <footer
-            className="py-5 mt-10 text-center bg-cardBG text-pinkText"
+            className="py-5 mt-10 text-center bg-cardBG text-pinkText decor"
         >
             <p>
                 Epost: <span className=" text-blueText">
                     ohfb96@gmail.com
-                    </span>
+                </span>
             </p>
             <p>
                 Telefon: <span className="text-blueText">
                     96912304
-                    </span>
+                </span>
             </p>
             <div
-            className="flex justify-around"
+                className="flex justify-around underline"
             >
-                <p>GitHub</p>
-                <p>LinkedIn</p>
+                <p
+                    className=" hover:text-blueText"
+                >
+                    <a
+                        href="https://github.com/OleKodehode"
+                    >
+                        GitHub
+                    </a>
+                </p>
+                <p
+                    className=" hover:text-blueText"
+                >
+                    <a
+                    >
+                        LinkedIn
+                    </a>
+                </p>
             </div>
         </footer>
     );
