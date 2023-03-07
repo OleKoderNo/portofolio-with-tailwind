@@ -9,6 +9,7 @@ import BAWMob from "@/images/BergenArmwrestlingMob.png";
 import KVBDesktop from "@/images/KodeverketBergen.png";
 import KVBMob from "@/images/KodeverketBergenMobil.png";
 import { useState } from "react";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -146,11 +147,15 @@ export default function Home() {
                 >
                 Om meg
               </button>
+              <Link
+              href="/mine-prosjekter"
+              >
               <button
                 className="w-[152px] h-10  rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
                 >
                 Mine prosjekter
               </button>
+                  </Link>
               <button
                 className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
                 >
