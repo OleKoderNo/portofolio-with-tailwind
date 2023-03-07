@@ -11,7 +11,7 @@ export default function Footer() {
         className="py-5 mt-10 text-center bg-cardBG text-pinkText decor"
         >
             <div
-            className="w-[200px] flex justify-between mx-auto"
+            className="w-[200px] flex justify-between mx-auto md:w-[250px]"
             >
 
             <p>
@@ -22,7 +22,7 @@ export default function Footer() {
                 </p>
                 </div>
             <div
-            className="w-[200px] flex justify-between mx-auto"
+            className="w-[200px] flex justify-between mx-auto md:w-[250px]"
                 >
             <p>
                 Telefon: 
