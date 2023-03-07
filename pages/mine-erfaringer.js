@@ -1,6 +1,19 @@
 export default function Experience() {
     return (
         <>
+        <Head>
+        <title
+        >
+          Ole sine erfaringer
+        </title>
+        <meta
+          name="description"
+          content="Ole Håvard Furuseth Bergan er en dyktig frontend utvikler som vært litt forskjellige steder, blandt annet hos kodeverket bergen. Han har også kunnskap om universell utforming."
+        />
+        <meta name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+      </Head>
             <header 
             className="pb-8 mx-auto font-bold text-center"
             >

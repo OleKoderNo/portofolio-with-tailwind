@@ -1,6 +1,21 @@
+import Head from "next/head";
+
 export default function Experience() {
     return (
         <>
+        <Head>
+        <title
+        >
+          Om meg
+        </title>
+        <meta
+          name="description"
+          content="Her finner du er oversikt over koderelaterte ting jeg har lært på vei inn i kodingens verden."
+        />
+        <meta name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+      </Head>
         <header 
             className="pb-8 mx-auto font-bold text-center"
             >
