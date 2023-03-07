@@ -3,11 +3,8 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Selfie from "../public/pic_of_ole.jpg";
 import FornyDesktop from "@/images/FornyNorge.png";
-import FornyMob from "@/images/FornyNorgeMob.png";
 import BAWDesktop from "@/images/BergenArmwrestling.png";
-import BAWMob from "@/images/BergenArmwrestlingMob.png";
 import KVBDesktop from "@/images/KodeverketBergen.png";
-import KVBMob from "@/images/KodeverketBergenMobil.png";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -142,11 +139,15 @@ export default function Home() {
             <div
               className="flex flex-col items-center gap-4 pt-10 text-[#000000] h-"
             >
+              <Link
+              href="/om-meg"
+              >
               <button
                 className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
-              >
+                >
                 Om meg
               </button>
+                </Link>
               <Link
                 href="/mine-prosjekter"
               >
@@ -217,11 +218,6 @@ export default function Home() {
             <div
               className="border divide-y-[1px]"
             >
-              {/* <h2
-                className='my-4 text-2xl text-center '
-                >
-                Noen av mine prosjekter
-              </h2> */}
               <div className={`px-8 ${fornyCard ? "content" : "hidden"}`}>
                 <h3
                   className="my-4 text-xl font-bold "
@@ -243,7 +239,6 @@ export default function Home() {
                       className=""
                     />
                   </a>
-                  {/* <Image src={FornyMob} className="mx-auto" /> */}
                 </div>
                 <p className="my-4 text-center underline">
                   <a href="https://fornynorge.no/">www.fornynorge.no</a>
@@ -270,7 +265,6 @@ export default function Home() {
                       src={BAWDesktop}
                     />
                   </a>
-                  {/* <Image src={BAWMob} className="mx-auto" /> */}
                 </div>
                 <p
                   className="my-4 text-center underline"
@@ -299,7 +293,6 @@ export default function Home() {
                       src={KVBDesktop}
                     />
                   </a>
-                  {/* <Image src={KVBMob} className="mx-auto" /> */}
                 </div>
                 <p
                   className="my-4 text-center underline"
