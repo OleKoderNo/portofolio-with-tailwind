@@ -8,7 +8,7 @@ import Image from "next/image"
 export default function Footer() {
     return (
         <footer
-            className="py-5 mt-20 text-center bg-cardBG text-pinkText"
+            className="py-5 mt-10 text-center bg-cardBG text-pinkText"
         >
             <p>
                 Epost: <span className=" text-blueText">
