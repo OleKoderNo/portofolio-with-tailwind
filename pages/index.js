@@ -185,7 +185,7 @@ export default function Home() {
                   className="py-4 pl-8 text-2xl font-bold leading-10 text-greyText"
                 >
                   <li
-                    className=""
+                    className={` cursor-pointer w-fit ${fornyCard ? "underline" : " no-underline"}`}
                     onClick={() => {
                       DeactivateState();
                       setFornyCard(true);
@@ -194,7 +194,7 @@ export default function Home() {
                     Forny Norge
                   </li>
                   <li
-                    className=""
+                    className={` cursor-pointer w-fit ${bawCard ? "underline" : " no-underline"}`}
                     onClick={() => {
                       DeactivateState();
                       setBawCard(true);
@@ -203,7 +203,7 @@ export default function Home() {
                     Bergen Armwrestling Club
                   </li>
                   <li
-                    className=""
+                    className={` cursor-pointer w-fit ${kvbCard ? "underline" : " no-underline"}`}
                     onClick={() => {
                       DeactivateState();
                       setKvbCard(true);
