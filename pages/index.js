@@ -114,6 +114,7 @@ export default function Home() {
                 className="pl-6 drop-shadow-[0px_0_20px_rgba(20,205,200,0.4)]"
                 src={Selfie}
                 width={146}
+                alt="Svart hvit portrettbilde av Ole"
               />
               <p
                 className="pl-3"
@@ -237,6 +238,7 @@ export default function Home() {
                     <Image
                       src={FornyDesktop}
                       className=""
+                      alt="Illustrasjon som viser hvordan forny norge sin hjemmeside ser ut"
                     />
                   </a>
                 </div>
@@ -263,6 +265,7 @@ export default function Home() {
                   >
                     <Image
                       src={BAWDesktop}
+                      alt="Illustrasjon som viser hvordan bergen armwrestling sin hjemmeside ser ut"
                     />
                   </a>
                 </div>
@@ -291,6 +294,7 @@ export default function Home() {
                   >
                     <Image
                       src={KVBDesktop}
+                      alt="Illustrasjon som viser hvordan kodeverket bergen sin hjemmeside ser ut"
                     />
                   </a>
                 </div>
