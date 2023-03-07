@@ -237,6 +237,7 @@ export default function Home() {
                   >
                     <Image
                       src={FornyDesktop}
+                      priority
                       className=""
                       alt="Illustrasjon som viser hvordan forny norge sin hjemmeside ser ut"
                     />
