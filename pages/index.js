@@ -141,14 +141,14 @@ export default function Home() {
               className="flex flex-col items-center gap-4 pt-10 text-[#000000] h-"
             >
               <Link
-              href="/om-meg"
+                href="/om-meg"
               >
-              <button
-                className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
+                <button
+                  className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
                 >
-                Om meg
-              </button>
-                </Link>
+                  Om meg
+                </button>
+              </Link>
               <Link
                 href="/mine-prosjekter"
               >
@@ -170,7 +170,7 @@ export default function Home() {
             </div>
           </section>
           <section
-            className="hidden w-1/2 md:block shadow-[0px_0_10px_rgba(0,0,0,0.8)] h-fit rounded-tl-[20px] rounded-tr-[20px]"
+            className="hidden w-1/2 md:block shadow-[0px_0_10px_rgba(0,0,0,0.8)] h-fit rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px]"
           >
             <div
               className=" border rounded-tl-[20px] rounded-tr-[20px] bg-cardBG "
@@ -217,7 +217,7 @@ export default function Home() {
               </nav>
             </div>
             <div
-              className="border divide-y-[1px]"
+              className="border divide-y-[1px] rounded-bl-[20px] rounded-br-[20px]"
             >
               <div className={`px-8 ${fornyCard ? "content" : "hidden"}`}>
                 <h3
@@ -280,7 +280,7 @@ export default function Home() {
                   </a>
                 </p>
               </div>
-              <div className={` px-8 ${kvbCard ? "content" : "hidden"}`}>
+              <div className={` px-8 rounded-bl-[20px] rounded-br-[20px] ${kvbCard ? "content" : "hidden"}`}>
                 <h3
                   className="my-4 text-xl font-bold"
                 >
