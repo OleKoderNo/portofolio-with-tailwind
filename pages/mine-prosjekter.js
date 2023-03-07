@@ -144,6 +144,24 @@ export default function Projects() {
                         </a>
                     </p>
                 </div>
+                <div className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)]">
+                    <h3
+                    className="text-lg font-medium text-pinkText"
+                    >
+                        Min første portofolio
+                    </h3>
+                    <p>
+                        Dette var det første prosjektet jeg bygget i React.js. Som man ser har jeg kommet langt på kort tid. Siden er også oversatt ved hjelp av i18n.
+                    </p>
+                    <p>
+                        <a
+                        className="underline cursor-pointer text-blueText hover:text-pinkText"
+                        href="https://olekodehode.github.io/portofolio/"
+                        >
+                            Portofolio 2022
+                        </a>
+                    </p>
+                </div>
             </section>
         </main>
         </>
