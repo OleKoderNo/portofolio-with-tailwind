@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from "next/link"
 // import Logo from "@/images/layout/footer/Jobbjakt_logo.svg"
-import Image from "next/image";
+import Image from "next/image"
 // import Mail from "@/images/layout/footer/mail.png"
 // import Phone from "@/images/layout/footer/phone.png"
 
