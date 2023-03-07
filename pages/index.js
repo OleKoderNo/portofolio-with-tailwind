@@ -168,10 +168,10 @@ export default function Home() {
             </div>
           </section>
           <section
-            className="hidden w-1/2 md:block"
+            className="hidden w-1/2 md:block shadow-[0px_0_10px_rgba(0,0,0,0.8)] rounded-tl-[20px] rounded-tr-[20px]"
           >
             <div
-              className=" border rounded-tl-[20px] rounded-tr-[20px] bg-cardBG"
+              className=" border rounded-tl-[20px] rounded-tr-[20px] bg-cardBG "
             >
               <h2
                 className="my-4 text-2xl text-center text-pinkText"
