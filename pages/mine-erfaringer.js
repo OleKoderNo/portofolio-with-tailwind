@@ -3,21 +3,21 @@ import Head from "next/head";
 export default function Experience() {
     return (
         <>
-        <Head>
-        <title
-        >
-          Ole sine erfaringer
-        </title>
-        <meta
-          name="description"
-          content="Ole Håvard Furuseth Bergan er en dyktig frontend utvikler som vært litt forskjellige steder, blandt annet hos kodeverket bergen. Han har også kunnskap om universell utforming."
-        />
-        <meta name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
-      </Head>
-            <header 
-            className="pb-8 mx-auto font-bold text-center"
+            <Head>
+                <title
+                >
+                    Ole sine erfaringer
+                </title>
+                <meta
+                    name="description"
+                    content="Ole Håvard Furuseth Bergan er en dyktig frontend utvikler som vært litt forskjellige steder, blandt annet hos kodeverket bergen. Han har også kunnskap om universell utforming."
+                />
+                <meta name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
+            </Head>
+            <header
+                className="pb-8 mx-auto font-bold text-center"
             >
                 <h1
                     className="text-xl md:text-3xl"
@@ -48,11 +48,11 @@ export default function Experience() {
                                 Octaos
                             </h3>
                             <p
-                            className="my-2 text-blueText"
+                                className="my-2 text-blueText"
                             >
                                 <em>
 
-                                20.06.22-20.09.22
+                                    20.06.22-20.09.22
                                 </em>
                             </p>
                             <p>
@@ -67,7 +67,7 @@ export default function Experience() {
                                 Bjørnafjorden Næringsråd
                             </h3>
                             <p
-                            className="my-2 text-blueText"
+                                className="my-2 text-blueText"
                             >
                                 <em>
                                     20.09.22-31.10.22
@@ -84,11 +84,11 @@ export default function Experience() {
                                 Kodeverket Bergen
                             </h3>
                             <p
-                            className="my-2 text-blueText"
+                                className="my-2 text-blueText"
                             >
                                 <em>
                                     28.10.22- Jobber her pr d.d
-                                    </em>
+                                </em>
                             </p>
                             <p>
                                 Kodeverket er en helt ny startup, som ble startet i år og er laget i samarbeid med Kodehode. Vi jobber med å lage alt fra statiske, til komplekse nettsider som bruker CMS løsninger. Min hovedoppgave her er å være techlead, og hjelpe alle med det faglige rundt koding, og forbedre kodeferdighetene sine.
@@ -112,9 +112,11 @@ export default function Experience() {
                                 Kodehode
                             </h3>
                             <p
-                            className=" text-blueText"
+                                className="my-2 text-blueText"
                             >
-                                06.01.22-06.01.23
+                                <em>
+                                    06.01.22-06.01.23
+                                </em>
                             </p>
                             <p>
                                 I Januar 2022 startet jeg min nye reise som webutvikler. Jeg startet på et kurs som heter Kodehode. Her har jeg deltatt og fullført et intensivt teorikurs. I teori delen av kurset har jeg lært HTML, CSS, JavaScript og React.
@@ -127,9 +129,11 @@ export default function Experience() {
                                 Universell utforming av IKT for utviklere og testledere
                             </h3>
                             <p
-                            className="my-2 text-blueText"
+                                className="my-2 text-blueText"
                             >
-                                31.01.23
+                                <em>
+                                    31.01.23
+                                </em>
                             </p>
                             <p>
                                 Jeg har tatt DFØ sitt kurs i universell utforming av IKT for utviklere og testledere på læringsplatformen sine nettsider.
@@ -142,14 +146,16 @@ export default function Experience() {
                                 Universell utforming. E-læringskurs for nettredaktører
                             </h3>
                             <p
-                            className="my-2 text-blueText"
+                                className="my-2 text-blueText"
                             >
-                                13.02.23
+                                <em>
+                                    13.02.23
+                                </em>
                             </p>
                             <p>
-                            Jeg har tatt DFØ sitt universell utforming e-læringskurs for nettredaktører på læringsplatformen sine nettsider.
+                                Jeg har tatt DFØ sitt universell utforming e-læringskurs for nettredaktører på læringsplatformen sine nettsider.
                             </p>
-                        </div>       
+                        </div>
                     </div>
                 </section>
 
