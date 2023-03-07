@@ -8,13 +8,17 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <footer
-            className="mt-20 py-5  bg-[#050C11] text-center text-[#fff]"
+            className="py-5 mt-20 text-center bg-cardBG text-pinkText"
         >
             <p>
-                Epost: ohfb96@gmail.com
+                Epost: <span className=" text-blueText">
+                    ohfb96@gmail.com
+                    </span>
             </p>
             <p>
-                Telefon: 96912304
+                Telefon: <span className="text-blueText">
+                    96912304
+                    </span>
             </p>
             <div
             className="flex justify-around"
