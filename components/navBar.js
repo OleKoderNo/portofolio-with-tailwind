@@ -30,6 +30,7 @@ const NavBar = () => {
             </Link>
             <div className="md:hidden">
               <button
+                aria-label=" navigasjons knapp"
                 className="p-2 text-gray-900 rounded-md outline-none focus:border-gray-900 focus:border"
                 onClick={() => {
                   setNavbar(!navbar)
