@@ -170,7 +170,7 @@ export default function Home() {
             </div>
           </section>
           <section
-            className="hidden w-1/2 md:block shadow-[0px_0_10px_rgba(0,0,0,0.8)] rounded-tl-[20px] rounded-tr-[20px]"
+            className="hidden w-1/2 md:block shadow-[0px_0_10px_rgba(0,0,0,0.8)] h-fit rounded-tl-[20px] rounded-tr-[20px]"
           >
             <div
               className=" border rounded-tl-[20px] rounded-tr-[20px] bg-cardBG "
