@@ -52,7 +52,7 @@ export default function Home() {
           Ole Håvard Furuseth Bergan
         </h1>
         <h2
-          className="text-l md:text-2xl "
+          className="mt-2 text-l md:text-2xl"
         >
           Frontend utvikler
         </h2>

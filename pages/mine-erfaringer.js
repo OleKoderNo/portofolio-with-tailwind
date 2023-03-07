@@ -1,7 +1,9 @@
 export default function Experience() {
     return (
         <>
-            <header className="font-bold text-center">
+            <header 
+            className="pb-8 mx-auto font-bold text-center"
+            >
                 <h1
                     className="text-xl md:text-3xl"
                 >
@@ -14,7 +16,7 @@ export default function Experience() {
                 </h2>
             </header>
             <main
-                className="max-w-6xl mx-auto mt-5 text-greyText"
+                className="max-w-6xl mx-auto text-greyText"
             >
                 <section
                 >
@@ -31,7 +33,7 @@ export default function Experience() {
                                 Octaos
                             </h3>
                             <p
-                            className="my-2  text-blueText"
+                            className="my-2 text-blueText"
                             >
                                 <em>
 
@@ -50,7 +52,7 @@ export default function Experience() {
                                 Bjørnafjorden Næringsråd
                             </h3>
                             <p
-                            className="my-2  text-blueText"
+                            className="my-2 text-blueText"
                             >
                                 <em>
                                     20.09.22-31.10.22
@@ -67,7 +69,7 @@ export default function Experience() {
                                 Kodeverket Bergen
                             </h3>
                             <p
-                            className="my-2  text-blueText"
+                            className="my-2 text-blueText"
                             >
                                 <em>
                                     28.10.22- Jobber her pr d.d
@@ -110,7 +112,7 @@ export default function Experience() {
                                 Universell utforming av IKT for utviklere og testledere
                             </h3>
                             <p
-                            className="my-2  text-blueText"
+                            className="my-2 text-blueText"
                             >
                                 31.01.23
                             </p>

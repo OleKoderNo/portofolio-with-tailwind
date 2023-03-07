@@ -1,7 +1,9 @@
 export default function Projects() {
 	return (
         <>
-        <header className="font-bold text-center">
+        <header 
+        className="pb-8 mx-auto font-bold text-center"
+        >
             <h1
             className="text-xl md:text-3xl"
             >
@@ -14,7 +16,7 @@ export default function Projects() {
             </h2>
         </header>
         <main
-        className="max-w-6xl mx-auto mt-10 text-greyText"
+        className="max-w-6xl mx-auto mt-14 text-greyText"
         >
             <section
             className="flex flex-wrap justify-center gap-16"
