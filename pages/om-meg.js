@@ -102,13 +102,13 @@ export default function Experience() {
                             Google Maps API
                         </li>
                         <li>
+                        <li>
+                            Python
+                        </li>
                             Wix
                         </li>
                         <li>
                             Wordpress
-                        </li>
-                        <li>
-                            Python
                         </li>
                     </ul>
                 </div>
