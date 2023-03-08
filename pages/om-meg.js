@@ -46,7 +46,7 @@ export default function Experience() {
                 </p>
             </section>
             <section
-            className="mx-10 xxs:mx-14"
+            className="pt-2 mx-10 xxs:mx-14"
             >
                 <h2
                 className="mt-2 text-xl font-medium text-center md:text-2xl"
