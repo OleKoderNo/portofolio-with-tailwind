@@ -91,7 +91,7 @@ export default function Experience() {
                                 </em>
                             </p>
                             <p>
-                                Kodeverket er en helt ny startup, som ble startet i år og er laget i samarbeid med Kodehode. Vi jobber med å lage alt fra statiske, til komplekse nettsider som bruker CMS løsninger. Min hovedoppgave her er å være techlead, og hjelpe alle med det faglige rundt koding, og forbedre kodeferdighetene sine.
+                                Kodeverket er en startup, som ble stiftet høsten 2022. Vi jobber med å lage alt fra statiske, til komplekse nettsider som bruker CMS løsninger. Min hovedoppgave her er å være techlead, og hjelpe alle med det faglige rundt koding, og forbedre kodeferdighetene sine.
                             </p>
                         </div>
                     </div>
