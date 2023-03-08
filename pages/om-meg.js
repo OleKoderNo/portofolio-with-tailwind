@@ -72,6 +72,9 @@ export default function Experience() {
                             JavaScript
                         </li>
                         <li>
+                            TypeScript
+                        </li>
+                        <li>
                             SASS
                         </li>
                         <li>
@@ -103,6 +106,9 @@ export default function Experience() {
                         </li>
                         <li>
                             Wordpress
+                        </li>
+                        <li>
+                            Python
                         </li>
                     </ul>
                 </div>
