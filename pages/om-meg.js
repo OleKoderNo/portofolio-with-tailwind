@@ -102,9 +102,9 @@ export default function Experience() {
                             Google Maps API
                         </li>
                         <li>
-                        <li>
                             Python
                         </li>
+                        <li>
                             Wix
                         </li>
                         <li>
