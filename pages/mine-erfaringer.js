@@ -45,19 +45,17 @@ export default function Experience() {
                             <h3
                                 className="text-lg font-medium text-pinkText"
                             >
-                                Octaos
+                                Kodeverket Bergen
                             </h3>
                             <p
                                 className="my-2 text-blueText"
                             >
                                 <em>
-
-                                    20.06.22-20.09.22
+                                    28.10.22- Jobber her pr d.d
                                 </em>
                             </p>
                             <p>
-                                Hos Octaos var jeg i praksis og her laget jeg en kundeoversikt, som er lett  å bruke, og oppdateres automatsik når man legger, eller sletter informasjon. Her ble det brukt ReactJS, Google maps API og Firebase.
-
+                                Kodeverket er en startup, som ble stiftet høsten 2022. Vi jobber med å lage alt fra statiske, til komplekse nettsider som bruker CMS løsninger. Min hovedoppgave her er å være techlead, og hjelpe alle med det faglige rundt koding, og forbedre kodeferdighetene sine.
                             </p>
                         </div>
                         <div className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)]">
@@ -81,17 +79,19 @@ export default function Experience() {
                             <h3
                                 className="text-lg font-medium text-pinkText"
                             >
-                                Kodeverket Bergen
+                                Octaos
                             </h3>
                             <p
                                 className="my-2 text-blueText"
                             >
                                 <em>
-                                    28.10.22- Jobber her pr d.d
+
+                                    20.06.22-20.09.22
                                 </em>
                             </p>
                             <p>
-                                Kodeverket er en startup, som ble stiftet høsten 2022. Vi jobber med å lage alt fra statiske, til komplekse nettsider som bruker CMS løsninger. Min hovedoppgave her er å være techlead, og hjelpe alle med det faglige rundt koding, og forbedre kodeferdighetene sine.
+                                Hos Octaos var jeg i praksis og her laget jeg en kundeoversikt, som er lett  å bruke, og oppdateres automatsik når man legger, eller sletter informasjon. Her ble det brukt ReactJS, Google maps API og Firebase.
+
                             </p>
                         </div>
                     </div>
