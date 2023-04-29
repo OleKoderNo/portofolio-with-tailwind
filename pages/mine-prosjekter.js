@@ -72,6 +72,26 @@ export default function Projects() {
                     </a>
                 </p>
                 </div>
+                {/*  */}
+                <div className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)]">
+                    <h3
+                    className="text-lg font-medium text-pinkText"
+                    >
+                    Passord generator
+                    </h3>
+                    <p>
+                        Passord generatoren min er bygget opp med Next.js, javascript og CSS i modules. Her kan du velge hvor mange passord du vil ha, gi dem et navn, og laste det ned som en .txt fil.
+                    </p>
+                    <p>
+                        <a
+                        className="underline cursor-pointer text-blueText hover:text-pinkText"
+                        href="https://passord-generator-navy.vercel.app/"
+                        >
+                            Min passord generator
+                        </a>
+                    </p>
+                </div>
+                {/*  */}
                 <div className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)]">
                     <h3
                     className="text-lg font-medium text-pinkText"
