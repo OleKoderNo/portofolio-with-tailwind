@@ -102,6 +102,9 @@ export default function Experience() {
                             Google Maps API
                         </li>
                         <li>
+                            PostgreSQL
+                        </li>
+                        <li>
                             Python
                         </li>
                         <li>
@@ -109,7 +112,6 @@ export default function Experience() {
                         </li>
                         <li>
                             Wordpress
-                            
                         </li>
                     </ul>
                 </div>

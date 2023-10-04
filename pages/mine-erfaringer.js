@@ -51,11 +51,15 @@ export default function Experience() {
                                 className="my-2 text-blueText"
                             >
                                 <em>
-                                    28.10.22- Jobber her pr d.d
+                                    28.10.22 - 31.05.23
                                 </em>
                             </p>
                             <p>
+                                {/* forslag 1 */}
                                 Kodeverket er en startup, som ble stiftet høsten 2022. Vi jobber med å lage alt fra statiske, til komplekse nettsider som bruker CMS løsninger. Min hovedoppgave her er å være techlead, og hjelpe alle med det faglige rundt koding, og forbedre kodeferdighetene sine.
+
+                                {/* forslag 2  */}
+                                Kodeverket er en startup som ble startet høsten 2022. Her fikk jeg ansvar som techlead. Jeg bisto med opplæring av praksiskandidater fra starten, og var med på implementeringen av Next.js i bedriften. Et stort ansvar jeg også hadde var å se igjennom at ting var greit, og hjelpe til med bugfikses og gå over feilmeldinger dersom det oppsto. Vi laget alt fra statiske nettsider, til med komplekse nettsider med CMS løsninger for våre kunder.
                             </p>
                         </div>
                         <div className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)]">
