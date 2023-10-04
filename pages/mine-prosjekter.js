@@ -43,8 +43,8 @@ export default function Projects() {
                             JobbJakt.no
                         </h3>
                         <p>
-                            {/* Forlag 1 */}
-                            JobbJakt.no er en nettside som Kodeverket har bygget om fra scratch. Her har vi gitt nettsiden nytt design og bedre brukervennlighet, og tatt kunden bort fra Wordpress og over til Next.js. For å gjøre nettsiden mest mulig brukervennlig valgte vi å slå sammen flere av undersidene fra det orginale designet, til bokser du kan velge, for å fremmheve ønsket og relevant informasjon på. Dette gir en mye bedre brukeropplevelse, da det er mye mer oversiktlig. Her har mitt hovedansvar vært å bistå med Sanity løsningen, implementere denne til siden, og lage boksen vi kan hente ut informasjon fra. Samtidig som jeg også har sjekket siden før bugs, og feilmeldinger før launch.
+                            {/* Forlag 1
+                            JobbJakt.no er en nettside som Kodeverket har bygget om fra scratch. Her har vi gitt nettsiden nytt design og bedre brukervennlighet, og tatt kunden bort fra Wordpress og over til Next.js. For å gjøre nettsiden mest mulig brukervennlig valgte vi å slå sammen flere av undersidene fra det orginale designet, til bokser du kan velge, for å fremmheve ønsket og relevant informasjon på. Dette gir en mye bedre brukeropplevelse, da det er mye mer oversiktlig. Her har mitt hovedansvar vært å bistå med Sanity løsningen, implementere denne til siden, og lage boksen vi kan hente ut informasjon fra. Samtidig som jeg også har sjekket siden før bugs, og feilmeldinger før launch. */}
 
                             {/* Forlag 2 */}
                             JobbJakt.no er en nettside som Kodeverket har bygget om fra scratch. Her har vi gitt nettsiden nytt design og bedre brukervennlighet, og tatt kunden bort fra Wordpress og over til Next.js. For å gjøre nettsiden mest mulig brukervennlig valgte vi å slå sammen flere av undersidene fra det orginale designet, til bokser du kan velge, for å fremmheve ønsket og relevant informasjon på. Dette gir en mye bedre brukeropplevelse, da det er mye mer oversiktlig. Her har mitt hovedansvar vært å bistå med Sanity løsningen, implementere denne til siden, og lage boksen vi kan hente ut informasjon fra. Samtidig som jeg også har sjekket siden før bugs, og feilmeldinger før launch. Har også bidratt en del på de andre områdene på nettsiden når det var behov.
@@ -128,8 +128,8 @@ export default function Projects() {
                             {/* forslag 1 */}
                             Kodeverket Bergen er hjemmesiden vår, og denne er bygget opp med Next.js og Tailwind CSS, og har gjennom tiden gått igjennom flere utviklingsfaser. Her har jeg hovedsaklig tilpasset nettsiden til å være mobilvennelig, og laget kort med informasjon om teamet som snur seg når man trykker på dem.
 
-                            {/* forslag 2 */}
-                            Dette er første utkastet til Kodeverket sin hjemmeside. Her fikk jeg i hovedoppgave å vidreutvikle noe som hadde blitt utviklet, og gjøre det mer mobilvenlig.
+                            {/* forslag 2
+                            Dette er første utkastet til Kodeverket sin hjemmeside. Her fikk jeg i hovedoppgave å vidreutvikle noe som hadde blitt utviklet, og gjøre det mer mobilvenlig. */}
                         </p>
                         <p>
                             <a
