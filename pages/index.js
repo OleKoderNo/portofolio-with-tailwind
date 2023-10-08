@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import Selfie from "../public/pic_of_ole.jpg";
 import Link from "next/link";
 import ProjectsCardComponents from "@/components/projectsCardComponent";
+import MovingText from "@/components/movingText";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,16 +32,7 @@ export default function Home() {
       <header
         className="pb-8 mx-auto font-bold text-center"
       >
-        <h1
-          className="text-xl md:text-3xl"
-        >
-          Ole Håvard Furuseth Bergan
-        </h1>
-        <h2
-          className="mt-2 text-l md:text-2xl"
-        >
-          Frontend utvikler
-        </h2>
+        <MovingText />
       </header>
       <main
         className="mx-auto max-w-7xl"
