@@ -32,7 +32,18 @@ export default function Home() {
       <header
         className="pb-8 mx-auto font-bold text-center"
       >
-        <MovingText />
+        <h1>
+          <MovingText
+            text="Ole Håvard Furuseth Bergan"
+            textSize="text-xl md:text-3xl"
+          />
+        </h1>
+        <h2>
+          <MovingText
+            text="Frontend utvikler"
+            textSize="mt-2 text-l md:text-2xl"
+          />
+        </h2>
       </header>
       <main
         className="mx-auto max-w-7xl"
