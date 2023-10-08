@@ -4,8 +4,12 @@ import { useRouter } from "next/router"
 
 const NavBar = () => {
 
-  const router = useRouter()
-  const [navbar, setNavbar] = useState(false)
+  const router = useRouter();
+  const [navbar, setNavbar] = useState(false);
+
+  const isActive = (href) => {
+    return router.pathname === href ? "active" : "";
+  };
   return (
     <nav
       className={`w-full bg-cardBG text-pinkText mb-4 ${navbar ? "bg-black md:bg-transparent" : "bg-transparent"
@@ -73,7 +77,7 @@ const NavBar = () => {
               }}
             >
               <li
-                className="hover:text-blueText"
+                className={`hover:text-blueText ${isActive("/") ? "underline" : "hover:underline"}`}
               >
                 <Link
                   href="/"
@@ -82,7 +86,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <li
-                className="hover:text-blueText"
+                className={`hover:text-blueText ${isActive("/om-meg") ? "underline" : "hover:underline"}`}
               >
                 <Link
                   href="/om-meg"
@@ -91,7 +95,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <li
-                className="hover:text-blueText"
+                className={`hover:text-blueText ${isActive("/mine-prosjekter") ? "underline" : "hover:underline"}`}
               >
                 <Link
                   href="/mine-prosjekter"
@@ -100,7 +104,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <li
-                className="hover:text-blueText"
+                className={`hover:text-blueText ${isActive("/mine-erfaringer") ? "underline" : "hover:underline"}`}
               >
                 <Link
                   href="/mine-erfaringer"
