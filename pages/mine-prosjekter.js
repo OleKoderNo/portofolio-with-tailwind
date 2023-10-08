@@ -109,7 +109,7 @@ export default function Projects({ data }) {
                                                 <p className="mx-3">
                                                     <a href={item.url}
                                                         target="_blank"
-                                                        className=" text-blueText underline"
+                                                        className=" text-blueText hover:text-pinkText underline"
                                                     >
 
                                                         Se prosjektet
