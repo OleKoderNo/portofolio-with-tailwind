@@ -90,7 +90,13 @@ const ProjectsCardComponents = () => {
                         </a>
                     </div>
                     <p className="my-4 text-center underline">
-                        <a href="https://fornynorge.no/">www.fornynorge.no</a>
+                        <a 
+                            className="text-blueText font-semibold hover:text-pinkText"
+                            href="https://fornynorge.no/"
+                            target="_blank"
+                        >
+                            www.fornynorge.no
+                        </a>
                     </p>
                 </div>
                 <div
@@ -117,9 +123,10 @@ const ProjectsCardComponents = () => {
                         </a>
                     </div>
                     <p
-                        className="my-4 text-center underline"
+                        className="my-4 text-center underline "
                     >
                         <a
+                            className="text-blueText font-semibold hover:text-pinkText"
                             href="https://bergenarmwrestling.no/"
                         >
                             www.bergenarmwrestling.no
@@ -149,7 +156,9 @@ const ProjectsCardComponents = () => {
                         className="my-4 text-center underline"
                     >
                         <a
+                            className="text-blueText font-semibold hover:text-pinkText"
                             href="https://www.kodeverketbergen.no/"
+                            target="_blank"
                         >
                             www.kodeverketbergen.no
                         </a>

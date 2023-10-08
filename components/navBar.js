@@ -1,32 +1,24 @@
 import { useState } from "react"
 import Link from "next/link"
-// import Image from "next/image"
-import { MdArrowDropDown } from "react-icons/md"
 import { useRouter } from "next/router"
-// import Logo from "@/images/layout/navBar/Jobbjakt_logo.svg"
 
 const NavBar = () => {
 
   const router = useRouter()
   const [navbar, setNavbar] = useState(false)
   return (
-    <nav 
-    className={`w-full ${
-      navbar ? "bg-black md:bg-transparent" : "bg-transparent"
-    }`
-  }
+    <nav
+      className={`w-full bg-cardBG text-pinkText mb-4 ${navbar ? "bg-black md:bg-transparent" : "bg-transparent"
+        }`
+      }
     >
-      <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
+      <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8 max-w-7xl">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="/" className="flex items-center mb-4 sm:mb-0">
-              {/* <Image 
-                src={Logo}
-                width={55}
-              /> */}
-              <span className="ml-2.5 self-center  whitespace-nowrap text-[#242424] uppercase font-bold">
+            <Link href="/" className="flex items-center  sm:mb-0">
+              <p className="self-center  whitespace-nowrap text-blueText uppercase font-bold">
                 Ole sin portofolio
-              </span>
+              </p>
             </Link>
             <div className="md:hidden">
               <button
@@ -71,27 +63,50 @@ const NavBar = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 bg-black md:bg-transparent ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 bg-black md:bg-transparent ${navbar ? "block" : "hidden"
+              }`}
           >
             <ul
-              className="relative items-center justify-center space-y-8 text-center md:flex md:space-x-6 md:space-y-0"
+              className="relative items-center justify-center space-y-8 text-center md:flex md:text-lg md:space-x-6 md:space-y-0"
               onClick={() => {
                 setNavbar(!navbar)
               }}
             >
-              <li>
-                <Link href="/">Forsiden</Link>
+              <li
+                className="hover:text-blueText"
+              >
+                <Link
+                  href="/"
+                >
+                  Forsiden
+                </Link>
               </li>
-              <li>
-                <Link href="/om-meg">Om meg</Link>
+              <li
+                className="hover:text-blueText"
+              >
+                <Link
+                  href="/om-meg"
+                >
+                  Om meg
+                </Link>
               </li>
-              <li>
-                <Link href="/mine-prosjekter">Mine prosjekter</Link>
+              <li
+                className="hover:text-blueText"
+              >
+                <Link
+                  href="/mine-prosjekter"
+                >
+                  Mine prosjekter
+                </Link>
               </li>
-              <li>
-                <Link href="/mine-erfaringer">Mine erfaringer</Link>
+              <li
+                className="hover:text-blueText"
+              >
+                <Link
+                  href="/mine-erfaringer"
+                >
+                  Mine erfaringer
+                </Link>
               </li>
             </ul>
           </div>
