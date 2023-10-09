@@ -9,30 +9,20 @@ import MovingText from "@/components/movingText";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-
   return (
     <>
       <Head>
-        <title>
-          Ole sin portofolio
-        </title>
+        <title>Ole sin portofolio</title>
         <meta
           name="description"
           content="Ole Håvard Furuseth Bergan er en dyktig frontend utvikler som har tilnærmet seg masse kunnskap og har godt kjennskap til moderne rammeverk."
         />
-        <meta name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
-        <link
-          rel="icon"
-          href="/favicon.ico"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Header section with animated text */}
-      <header
-        className="pb-8 mx-auto font-bold text-center"
-      >
+      <header className="pb-8 mx-auto font-bold text-center">
         <h1>
           <MovingText
             text="Ole Håvard Furuseth Bergan"
@@ -46,34 +36,17 @@ export default function Home() {
           />
         </h2>
       </header>
-      
-      <main
-        className="mx-auto max-w-7xl md:text-lg"
-      >
-        <div
-          className="justify-around md:flex"
-        >
-          <section>
 
+      <main className="mx-auto max-w-7xl md:text-lg">
+        <div className="justify-around md:flex">
+          <section>
             {/* Information card */}
-            <div
-              className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px] md:max-h-[500px] bigScreen:w-[400px] bigScreen:max-h-fit bigScreen:pt-8"
-            >
-              <p
-                aria-hidden="true"
-                className=" text-2xl"
-              >
+            <div className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px] md:max-h-[500px] bigScreen:w-[400px] bigScreen:max-h-fit bigScreen:pt-8">
+              <p aria-hidden="true" className=" text-2xl">
                 &lt;
-                <span
-                  className=" text-pinkText"
-                >
-                  Developer
-                </span>
+                <span className=" text-pinkText">Developer</span>
               </p>
-              <p
-                className="pl-3 bigScreen:text-xl"
-                aria-hidden="true"
-              >
+              <p className="pl-3 bigScreen:text-xl" aria-hidden="true">
                 id=
               </p>
               <p
@@ -88,10 +61,7 @@ export default function Home() {
               >
                 Furuseth Bergan"
               </p>
-              <p
-                className="pl-3 bigScreen:text-xl"
-                aria-hidden="true"
-              >
+              <p className="pl-3 bigScreen:text-xl" aria-hidden="true">
                 className=
               </p>
               <p
@@ -103,16 +73,9 @@ export default function Home() {
               <p aria-hidden="true" className="bigScreen:text-2xl">
                 &gt;
               </p>
-              <p
-                className="pl-3 bigScreen:text-2xl"
-                aria-hidden="true"
-              >
+              <p className="pl-3 bigScreen:text-2xl" aria-hidden="true">
                 &lt;
-                <span
-                  className=" text-pinkText"
-                >
-                  img
-                </span>
+                <span className=" text-pinkText">img</span>
                 &gt;
               </p>
               <Image
@@ -121,57 +84,32 @@ export default function Home() {
                 width={146}
                 alt="Svart hvit portrettbilde av Ole"
               />
-              <p
-                className="pl-3 bigScreen:text-2xl"
-                aria-hidden="true"
-              >
+              <p className="pl-3 bigScreen:text-2xl" aria-hidden="true">
                 &lt;/
-                <span
-                  className=" text-pinkText"
-                >
-                  img
-                </span>
+                <span className=" text-pinkText">img</span>
                 &gt;
               </p>
               <p aria-hidden="true" className="bigScreen:text-2xl">
                 &lt;/&nbsp;
-                <span
-                  className=" text-pinkText"
-                >
-                  Developer
-                </span>
+                <span className=" text-pinkText">Developer</span>
                 &gt;
               </p>
             </div>
 
             {/* Button links */}
-            <div
-              className="flex flex-col items-center gap-4 pt-10 text-[#000000] md:hidden"
-            >
-              <Link
-                href="/om-meg"
-              >
-                <button
-                  className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
-                >
+            <div className="flex flex-col items-center gap-4 pt-10 text-[#000000] md:hidden">
+              <Link href="/om-meg">
+                <button className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]">
                   Om meg
                 </button>
               </Link>
-              <Link
-                href="/mine-prosjekter"
-              >
-                <button
-                  className="w-[152px] h-10  rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
-                >
+              <Link href="/mine-prosjekter">
+                <button className="w-[152px] h-10  rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]">
                   Mine prosjekter
                 </button>
               </Link>
-              <Link
-                href="/mine-erfaringer"
-              >
-                <button
-                  className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]"
-                >
+              <Link href="/mine-erfaringer">
+                <button className="w-[152px] h-10 rounded-2xl shadow-[0px_0px_40px_rgba(55,59,61,0.4)]">
                   Mine erfaringer
                 </button>
               </Link>
