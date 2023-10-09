@@ -37,12 +37,22 @@ export default function Experience() {
                 <p
                 className="mt-4"
                 >
-                    Min fot inn i kodingens verden startet da jeg ble med i kurset Kodehode. Dette var noe som fant stor interesse for meg. Allerede før jeg begynte på kurset hadde jeg tatt et hurtig crashcourse via YouTube. Dette falt utrolig fort i smak, og koding ble en stor del av hverdagen min, også på fritiden.
+                    Mitt navn er Ole Håvard Furuseth Bergan, og jeg er en frontend utvikler med en lidenskap for å skape flotte, brukervennlige nettsider. Selv om jeg ikke har en formell utdanning innenfor feltet, har jeg nylig fullført intensivkurset Kodehode, hvor jeg har lært og praktisert ferdigheter innen HTML, CSS, JavaScript, React.js og mye mer.
                 </p>
                 <p
                 className="mt-2"
                 >
-                    Jeg har lært utrolig mye nytt å spennende, og har et enormt ønske om å lære enda mer, og vidre utvikle meg. På den korte tiden jeg var på kurset, har jeg oppdaget en ny hobby, som gir meg enormt med glede og mestringsfølelse.
+                    Jeg har allerede en betydelig erfaring med webutvikling, fra å jobbe med alt fra statiske nettsider til komplekse CMS-løsninger. En av mine styrker er min forståelse for CSS, noe som gjør at jeg kan skape vakre og responsive brukergrensesnitt.
+                </p>
+                <p
+                className="mt-2"
+                >
+                    På siste praksisplass min fikk jeg rollen som techlead, hvor jeg var ansvarlig for opplæring av praksiskandidater, implementering av Next.js og bugfiksing. Jeg har også en dyp forståelse for universell utforming og ønsker å gjøre nettet tilgjengelig for alle.
+                </p>
+                <p
+                className="mt-2"
+                >
+                    Jeg er alltid sulten på å lære og forbedre meg, og jeg jobber kontinuerlig med å utvide min kunnskap og mine ferdigheter. Mitt mål er å fortsette å vokse som utvikler og etter hvert utforske fullstack-utvikling.
                 </p>
             </section>
             <section
@@ -62,57 +72,23 @@ export default function Experience() {
                 className="mx-auto block w-64 py-6 px-14 bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)]"
                 >
                     <ul>
-                        <li>
-                            HTML
-                        </li>
-                        <li>
-                            CSS
-                        </li>
-                        <li>
-                            JavaScript
-                        </li>
-                        <li>
-                            TypeScript
-                        </li>
-                        <li>
-                            SASS
-                        </li>
-                        <li>
-                            Tailwind CSS
-                        </li>
-                        <li>
-                            React.js
-                        </li>
-                        <li>
-                            Next.js
-                        </li>
-                        <li>
-                            Strapi CMS
-                        </li>
-                        <li>
-                            Sanity.io
-                        </li>
-                        <li>
-                            Firebase
-                        </li>
-                        <li>
-                            Styled Components
-                        </li>
-                        <li>
-                            Google Maps API
-                        </li>
-                        <li>
-                            PostgreSQL
-                        </li>
-                        <li>
-                            Python
-                        </li>
-                        <li>
-                            Wix
-                        </li>
-                        <li>
-                            Wordpress
-                        </li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>SASS</li>
+                        <li>Tailwind CSS</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>Strapi CMS</li>
+                        <li>Sanity.io</li>
+                        <li>Firebase</li>
+                        <li>Styled Components</li>
+                        <li>Google Maps API</li>
+                        <li>PostgreSQL</li>
+                        <li>Python</li>
+                        <li>Wix</li>
+                        <li>Wordpress</li>
                     </ul>
                 </div>
             </section>
