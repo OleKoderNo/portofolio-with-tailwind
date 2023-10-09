@@ -28,12 +28,12 @@ export default function Experience() {
                         textSize="text-xl md:text-3xl"
                     />
                 </h1>
-                    <h2 className="font-medium text-center mt-2">
-                        <MovingText
-                            text="Min vei inn i koding"
-                            textSize="text-xl md:text-2xl"
-                        />
-                    </h2>
+                <h2 className="font-bold text-center mt-2">
+                    <MovingText
+                        text="Min vei inn i koding"
+                        textSize="text-l md:text-2xl"
+                    />
+                </h2>
             </header>
             <main>
                 <section
