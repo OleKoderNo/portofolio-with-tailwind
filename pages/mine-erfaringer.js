@@ -1,6 +1,7 @@
 import MovingText from "@/components/movingText";
 import Head from "next/head";
 
+// This component represent the experience and course section
 function ExperienceItem({ title, date, description }) {
     return (
         <div
@@ -22,6 +23,8 @@ function ExperienceItem({ title, date, description }) {
 }
 
 export default function Experience() {
+
+    // Data for work experience
     const workExperience = [
         {
             title: "Kodeverket Bergen",
@@ -43,6 +46,7 @@ export default function Experience() {
         },
     ];
 
+    // Data for courses and certifications
     const courses = [
         {
             title: "Kodehode",
