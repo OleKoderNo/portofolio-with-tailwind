@@ -64,7 +64,7 @@ export default function ProjectsCardComponents() {
                         {cardData.map((card, index) => (
                             <li
                                 key={index}
-                                className={`cursor-pointer w-fit ${activeCard === index ? "underline" : "no-underline"
+                                className={`cursor-pointer s hover:underline w-fit ${activeCard === index ? "underline text-blueText" : "no-underline"
                                     }`}
                                 onClick={() => handleClick(index)}
                             >
@@ -87,7 +87,7 @@ export default function ProjectsCardComponents() {
                         >
                             {card.title}
                         </h3>
-                        <p>
+                        <p className=" mb-4">
                             {card.description}
                         </p>
                         <div>
@@ -105,7 +105,7 @@ export default function ProjectsCardComponents() {
                             className="my-4 text-center underline"
                         >
                             <a
-                                className="text-blueText font-semibold hover:text-pinkText"
+                                className=" text-cardBG text-xl font-bold hover:text-pinkText"
                                 href={card.url}
                                 target="_blank"
                                 rel="noopener noreferrer"

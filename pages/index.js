@@ -57,10 +57,11 @@ export default function Home() {
 
             {/* Information card */}
             <div
-              className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px] md:max-h-[500px]"
+              className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px] md:max-h-[500px] bigScreen:w-[400px] bigScreen:max-h-fit bigScreen:pt-8"
             >
               <p
                 aria-hidden="true"
+                className=" text-2xl"
               >
                 &lt;
                 <span
@@ -70,40 +71,40 @@ export default function Home() {
                 </span>
               </p>
               <p
-                className="pl-3"
+                className="pl-3 bigScreen:text-xl"
                 aria-hidden="true"
               >
                 id=
               </p>
               <p
-                className="pl-3 text-blueText"
+                className="pl-3 text-blueText bigScreen:text-2xl"
                 aria-hidden="true"
               >
                 "Ole Håvard
               </p>
               <p
-                className="pl-3 text-blueText"
+                className="pl-3 text-blueText bigScreen:text-2xl"
                 aria-hidden="true"
               >
                 Furuseth Bergan"
               </p>
               <p
-                className="pl-3"
+                className="pl-3 bigScreen:text-xl"
                 aria-hidden="true"
               >
                 className=
               </p>
               <p
-                className="pl-3 text-blueText"
+                className="pl-3 text-blueText bigScreen:text-2xl"
                 aria-hidden="true"
               >
                 "Frontend Developer"
               </p>
-              <p aria-hidden="true">
+              <p aria-hidden="true" className="bigScreen:text-2xl">
                 &gt;
               </p>
               <p
-                className="pl-3"
+                className="pl-3 bigScreen:text-2xl"
                 aria-hidden="true"
               >
                 &lt;
@@ -115,13 +116,13 @@ export default function Home() {
                 &gt;
               </p>
               <Image
-                className="pl-6 drop-shadow-[0px_0_20px_rgba(20,205,200,0.4)]"
+                className="pl-6 drop-shadow-[0px_0_20px_rgba(20,205,200,0.4)] bigScreen:w-[80%] bigScreen:py-3"
                 src={Selfie}
                 width={146}
                 alt="Svart hvit portrettbilde av Ole"
               />
               <p
-                className="pl-3"
+                className="pl-3 bigScreen:text-2xl"
                 aria-hidden="true"
               >
                 &lt;/
@@ -132,7 +133,7 @@ export default function Home() {
                 </span>
                 &gt;
               </p>
-              <p aria-hidden="true">
+              <p aria-hidden="true" className="bigScreen:text-2xl">
                 &lt;/&nbsp;
                 <span
                   className=" text-pinkText"
@@ -145,7 +146,7 @@ export default function Home() {
 
             {/* Button links */}
             <div
-              className="flex flex-col items-center gap-4 pt-10 text-[#000000] h-"
+              className="flex flex-col items-center gap-4 pt-10 text-[#000000] md:hidden"
             >
               <Link
                 href="/om-meg"

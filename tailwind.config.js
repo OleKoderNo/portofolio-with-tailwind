@@ -7,13 +7,13 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'greyText': '#c2ccd8',
+      'greyText': '#e5eaf5',
       'pinkText': '#e16bab',
       'blueText': '#73c0e7',
       'cardBG': '#1e293b'
     },
     extend: {
-      screens: { xxs: '375px', xs: '425px' },
+      screens: { xxs: '375px', xs: '425px', bigScreen: '1440px'},
     },
   },
   plugins: [],
