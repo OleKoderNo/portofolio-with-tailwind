@@ -4,22 +4,48 @@ import FornyDesktop from "@/images/FornyNorge.png";
 import BAWDesktop from "@/images/BergenArmwrestling.png";
 import KVBDesktop from "@/images/KodeverketBergen.png";
 
-const ProjectsCardComponents = () => {
-    const [fornyCard, setFornyCard] = useState(true);
-    const [bawCard, setBawCard] = useState(false);
-    const [kvbCard, setKvbCard] = useState(false);
+const cardData = [
+    {
+        title: "Forny Norge",
+        description:
+            "På Forny Norge har jeg vært med på å redesigne hele nettsiden i wordpress.",
+        url: "https://www.fornynorge.no/",
+        image: FornyDesktop,
+    },
+    {
+        title: "Bergen Armwrestling Club",
+        description:
+            "På Bergen Armwrestling Club har jeg vært med å lage nettsiden fra scratch. Her har vi hovedsaklig brukt Next.js og Tailwind CSS.",
+        url: "https://www.bergenarmwrestling.no/",
+        image: BAWDesktop,
+    },
+    {
+        title: "Kodeverket Bergen",
+        description:
+            "På Kodeverket Bergen har jeg hovedsaklig stått for mobile first designet på siden. Siden er bygget opp med Next.js og Tailwind CSS.",
+        url: "https://www.kodeverketbergen.no/",
+        image: KVBDesktop,
+    },
+];
 
-    function DeactivateState() {
-        setFornyCard(false);
-        setBawCard(false);
-        setKvbCard(false);
-    }
+export default function ProjectsCardComponents() {
+    const [activeCard, setActiveCard] = useState(0);
+
+    const handleClick = (index) => {
+        setActiveCard(index);
+    };
+
+    const extractDomain = (url) => {
+        const hostname = new URL(url).hostname;
+        return hostname.startsWith("www.") ? hostname.slice(4) : hostname;
+    };
+
     return (
         <section
             className="hidden w-1/2 md:block shadow-[0px_0_10px_rgba(0,0,0,0.8)] h-fit rounded-tl-[20px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px]"
         >
             <div
-                className=" border rounded-tl-[20px] rounded-tr-[20px] bg-cardBG "
+                className="border rounded-tl-[20px] rounded-tr-[20px] bg-cardBG"
             >
                 <h2
                     className="my-4 text-2xl text-center text-pinkText"
@@ -27,146 +53,66 @@ const ProjectsCardComponents = () => {
                     Noen av mine prosjekter
                 </h2>
                 <nav
-                    className=" bg-cardBG"
+                    className="bg-cardBG"
                 >
                     <ul
                         className="py-4 pl-8 text-2xl font-bold leading-10 text-greyText"
                     >
-                        <li
-                            className={` cursor-pointer w-fit ${fornyCard ? "underline" : " no-underline"}`}
-                            onClick={() => {
-                                DeactivateState();
-                                setFornyCard(true);
-                            }}
-                        >
-                            Forny Norge
-                        </li>
-                        <li
-                            className={` cursor-pointer w-fit ${bawCard ? "underline" : " no-underline"}`}
-                            onClick={() => {
-                                DeactivateState();
-                                setBawCard(true);
-                            }}
-                        >
-                            Bergen Armwrestling Club
-                        </li>
-                        <li
-                            className={` cursor-pointer w-fit ${kvbCard ? "underline" : " no-underline"}`}
-                            onClick={() => {
-                                DeactivateState();
-                                setKvbCard(true);
-                            }}
-                        >
-                            Kodeverket Bergen
-                        </li>
+                        {cardData.map((card, index) => (
+                            <li
+                                key={index}
+                                className={`cursor-pointer w-fit ${activeCard === index ? "underline" : "no-underline"
+                                    }`}
+                                onClick={() => handleClick(index)}
+                            >
+                                {card.title}
+                            </li>
+                        ))}
                     </ul>
                 </nav>
             </div>
             <div
                 className="border divide-y-[1px] rounded-bl-[20px] rounded-br-[20px]"
             >
-                <div className={`px-8 ${fornyCard ? "content" : "hidden"}`}>
-                    <h3
-                        className="my-4 text-xl font-bold "
-                    >
-                        Forny Norge
-                    </h3>
-                    <p>
-                        På Forny Norge har jeg vært med på å redesigne hele nettsiden
-                        i wordpress.
-                    </p>
+                {cardData.map((card, index) => (
                     <div
-                        className=""
+                        key={index}
+                        className={`px-8 ${activeCard === index ? "content" : "hidden"}`}
                     >
-                        <a
-                            href="https://www.fornynorge.no/"
+                        <h3
+                            className="my-4 text-xl font-bold "
                         >
-                            <Image
-                                src={FornyDesktop}
-                                priority
-                                className=""
-                                alt="Illustrasjon som viser hvordan forny norge sin hjemmeside ser ut"
-                            />
-                        </a>
+                            {card.title}
+                        </h3>
+                        <p>
+                            {card.description}
+                        </p>
+                        <div>
+                            <a
+                                href={card.url}
+                            >
+                                <Image
+                                    src={card.image}
+                                    priority
+                                    alt={`Illustrasjon som viser hvordan ${card.title} sin hjemmeside ser ut`}
+                                />
+                            </a>
+                        </div>
+                        <p
+                            className="my-4 text-center underline"
+                        >
+                            <a
+                                className="text-blueText font-semibold hover:text-pinkText"
+                                href={card.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {extractDomain(card.url)}
+                            </a>
+                        </p>
                     </div>
-                    <p className="my-4 text-center underline">
-                        <a 
-                            className="text-blueText font-semibold hover:text-pinkText"
-                            href="https://fornynorge.no/"
-                            target="_blank"
-                        >
-                            www.fornynorge.no
-                        </a>
-                    </p>
-                </div>
-                <div
-                    className={`px-8 ${bawCard ? "content" : "hidden"}`}
-                >
-                    <h3
-                        className="my-4 text-xl font-bold "
-                    >
-                        Bergen Armwrestling Club
-                    </h3>
-                    <p>
-                        På Bergen Armwrestling Club har jeg vært med å lage nettsiden
-                        fra scratch. Her har vi hovedsaklig brukt Next.js og Tailwind
-                        CSS.
-                    </p>
-                    <div>
-                        <a
-                            href="https://www.bergenarmwrestling.no/"
-                        >
-                            <Image
-                                src={BAWDesktop}
-                                alt="Illustrasjon som viser hvordan bergen armwrestling sin hjemmeside ser ut"
-                            />
-                        </a>
-                    </div>
-                    <p
-                        className="my-4 text-center underline "
-                    >
-                        <a
-                            className="text-blueText font-semibold hover:text-pinkText"
-                            href="https://bergenarmwrestling.no/"
-                        >
-                            www.bergenarmwrestling.no
-                        </a>
-                    </p>
-                </div>
-                <div className={` px-8 rounded-bl-[20px] rounded-br-[20px] ${kvbCard ? "content" : "hidden"}`}>
-                    <h3
-                        className="my-4 text-xl font-bold"
-                    >
-                        Kodeverket Bergen
-                    </h3>
-                    <p>
-                        På Kodeverket Bergen har jeg hovedsaklig stått for mobile first designet på siden. Siden er bygget opp med Next.js og Tailwind CSS
-                    </p>
-                    <div>
-                        <a
-                            href="https://www.kodeverketbergen.no/"
-                        >
-                            <Image
-                                src={KVBDesktop}
-                                alt="Illustrasjon som viser hvordan kodeverket bergen sin hjemmeside ser ut"
-                            />
-                        </a>
-                    </div>
-                    <p
-                        className="my-4 text-center underline"
-                    >
-                        <a
-                            className="text-blueText font-semibold hover:text-pinkText"
-                            href="https://www.kodeverketbergen.no/"
-                            target="_blank"
-                        >
-                            www.kodeverketbergen.no
-                        </a>
-                    </p>
-                </div>
+                ))}
             </div>
         </section>
-    )
-}
-
-export default ProjectsCardComponents;
+    );
+};
