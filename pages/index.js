@@ -51,6 +51,8 @@ export default function Home() {
           className="justify-around md:flex"
         >
           <section>
+            
+            {/* Information card */}
             <div
               className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px] md:max-h-[500px]"
             >
@@ -137,6 +139,8 @@ export default function Home() {
                 &gt;
               </p>
             </div>
+
+            {/* Button links */}
             <div
               className="flex flex-col items-center gap-4 pt-10 text-[#000000] h-"
             >
@@ -169,6 +173,8 @@ export default function Home() {
               </Link>
             </div>
           </section>
+
+          {/* Some of my project cards. Only visable on 768px and up */}
           <ProjectsCardComponents />
         </div>
       </main>
