@@ -3,6 +3,7 @@ export default function Footer() {
         <footer
             className="py-5 mt-10 text-center bg-cardBG text-pinkText "
         >
+            {/* Contact email */}
             <div
                 className="w-[200px] flex justify-between mx-auto md:w-[250px]"
             >
@@ -14,6 +15,8 @@ export default function Footer() {
                     ohfb96@gmail.com
                 </p>
             </div>
+
+            {/* Contact number */}
             <div
                 className="w-[200px] flex justify-between mx-auto md:w-[250px]"
             >
@@ -24,8 +27,10 @@ export default function Footer() {
                     96912304
                 </p>
             </div>
+
+            {/* Some links */}
             <div
-                className="flex justify-between mx-auto max-w-4xl"
+                className="flex justify-between mx-auto max-w-[200px] md:max-w-4xl"
             >
                 <p
                     className=" hover:text-blueText underline"

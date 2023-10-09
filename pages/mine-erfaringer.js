@@ -81,6 +81,8 @@ export default function Experience() {
                     content="width=device-width, initial-scale=1"
                 />
             </Head>
+
+            {/* Header section with animated text */}
             <header
                 className="pb-8 mx-auto font-bold text-center"
             >

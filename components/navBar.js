@@ -4,12 +4,17 @@ import { useRouter } from "next/router"
 
 const NavBar = () => {
 
+  // Get the router
   const router = useRouter();
+
+  // State to navigate the menu
   const [navbar, setNavbar] = useState(false);
 
+  // Function to detirmine if a link is active
   const isActive = (href) => {
     return router.pathname === href ? "active" : "";
   };
+
   return (
     <nav
       className={`w-full bg-cardBG text-pinkText mb-4 ${navbar ? "bg-black md:bg-transparent" : "bg-transparent"
@@ -17,13 +22,14 @@ const NavBar = () => {
       }
     >
       <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8 max-w-7xl">
-        <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex items-center  sm:mb-0">
               <p className="self-center  whitespace-nowrap text-blueText uppercase font-bold">
                 Ole sin portofolio
               </p>
             </Link>
+
+            {/* Navigation button for mobile */}
             <div className="md:hidden">
               <button
                 aria-label=" navigasjons knapp"
@@ -33,6 +39,7 @@ const NavBar = () => {
                 }}
               >
                 {navbar ? (
+                  // Icon when mobile menu is open
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6 text-white"
@@ -46,6 +53,8 @@ const NavBar = () => {
                     />
                   </svg>
                 ) : (
+
+                  // Icon for when mobile menu is closed
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6 text-white"
@@ -64,9 +73,9 @@ const NavBar = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div>
+
           <div
+            // Styling for mobile navigation
             className={`flex-1 justify-self-center pb-3 mt-8  md:block md:pb-0 md:mt-0 bg-black md:bg-transparent ${navbar ? "block" : "hidden"
               }`}
           >
@@ -114,7 +123,6 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-        </div>
       </div>
     </nav>
   )

@@ -4,6 +4,7 @@ import FornyDesktop from "@/images/FornyNorge.png";
 import BAWDesktop from "@/images/BergenArmwrestling.png";
 import KVBDesktop from "@/images/KodeverketBergen.png";
 
+// Data for project cards
 const cardData = [
     {
         title: "Forny Norge",
@@ -31,10 +32,12 @@ const cardData = [
 export default function ProjectsCardComponents() {
     const [activeCard, setActiveCard] = useState(0);
 
+    // Function to render correct card
     const handleClick = (index) => {
         setActiveCard(index);
     };
 
+    //  Function to extract the domain from a URL
     const extractDomain = (url) => {
         const hostname = new URL(url).hostname;
         return hostname.startsWith("www.") ? hostname.slice(4) : hostname;
@@ -107,6 +110,7 @@ export default function ProjectsCardComponents() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
+                                {/* Extract and display the domain from the card URL */}
                                 {extractDomain(card.url)}
                             </a>
                         </p>

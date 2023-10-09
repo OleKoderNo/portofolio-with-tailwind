@@ -3,6 +3,7 @@ import { Client } from "@/lib/client";
 import { useState } from "react";
 import MovingText from "@/components/movingText";
 
+// Fetches data form Sanity
 export async function getServerSideProps() {
     const data = await Client.fetch(`*[_type == 'project']{title, urlDesc, url, description, tag[]->}`)
     return {
@@ -13,8 +14,6 @@ export async function getServerSideProps() {
 }
 
 export default function Projects({ data }) {
-
-
     return (
         <>
             <Head>
@@ -30,6 +29,8 @@ export default function Projects({ data }) {
                     content="width=device-width, initial-scale=1"
                 />
             </Head>
+
+            {/* Header section with animated text */}
             <header
                 className="pb-8 mx-auto font-bold text-center"
             >
@@ -52,10 +53,16 @@ export default function Projects({ data }) {
                 <section
                     className="flex flex-wrap justify-center gap-16"
                 >
+                    {/* Mapping and rendering each project item */}
                     {data.map((item) => {
-                        console.log(item);
+
+                        // Initilize state for modal
                         const [cardModal, setCardModal] = useState(false);
+
+                        // Function to open the modal
                         const openCardModal = () => setCardModal(true);
+
+                        // Function to close the modal
                         const closeCardModal = () => setCardModal(false);
                         return (
                             <>
@@ -79,6 +86,8 @@ export default function Projects({ data }) {
                                             </a>
                                         </p>
                                         <ul className="flex flex-wrap mt-5">
+
+                                            {/* Maps trough project tags and reder them */}
                                             {item.tag.map((list) => {
                                                 console.log(list);
                                                 return (
@@ -94,6 +103,8 @@ export default function Projects({ data }) {
                                     >
                                         Les mer
                                     </button>
+
+                                    {/* Render the modal if it's open */}
                                     {cardModal === true && (
                                         <div
                                             className="fixed top-0 left-0 z-20 flex items-center justify-center w-full h-full text-greyText backdrop-blur-[5px]"
@@ -119,6 +130,8 @@ export default function Projects({ data }) {
                                                     </a>
                                                 </p>
                                                 <ul className="flex flex-wrap mx-3 mb-5">
+
+                                                    {/* Maps trough project tags and reder them */}
                                                     {item.tag.map((list) => {
                                                         console.log(list);
                                                         return (

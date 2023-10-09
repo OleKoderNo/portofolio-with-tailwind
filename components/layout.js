@@ -3,7 +3,6 @@ import NavBar from "./navBar"
 
 export default function Layout({ children }) {
 	return (
-		<>
 			<div
 				className="flex flex-col min-h-screen"
 			>
@@ -15,6 +14,5 @@ export default function Layout({ children }) {
 				</div>
 				<Footer />
 			</div>
-		</>
 	)
 }
