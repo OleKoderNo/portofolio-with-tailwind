@@ -45,20 +45,17 @@ export default function Home() {
         </h2>
       </header>
       <main
-        className="mx-auto max-w-7xl"
+        className="mx-auto max-w-7xl md:text-lg"
       >
         <div
           className="justify-around md:flex"
         >
-          <section
-
-          >
+          <section>
             <div
-              className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px]"
+              className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px] md:max-h-[500px]"
             >
-
               <p
-              aria-hidden="true"
+                aria-hidden="true"
               >
                 &lt;
                 <span
@@ -99,10 +96,10 @@ export default function Home() {
               </p>
               <p aria-hidden="true">
                 &gt;
-                </p>
-              <p 
-              className="pl-3"
-              aria-hidden="true"
+              </p>
+              <p
+                className="pl-3"
+                aria-hidden="true"
               >
                 &lt;
                 <span

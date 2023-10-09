@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Client } from "@/lib/client";
 import { useState } from "react";
+import MovingText from "@/components/movingText";
 
 export async function getServerSideProps() {
     const data = await Client.fetch(`*[_type == 'project']{title, urlDesc, url, description, tag[]->}`)
@@ -32,19 +33,21 @@ export default function Projects({ data }) {
             <header
                 className="pb-8 mx-auto font-bold text-center"
             >
-                <h1
-                    className="text-xl md:text-3xl"
-                >
-                    Mine prosjekter
+                <h1>
+                    <MovingText
+                        text="Mine prosjekter"
+                        textSize="text-xl md:text-3xl"
+                    />
                 </h1>
-                <h2
-                    className="mt-2 text-xl md:text-2xl"
-                >
-                    Her er mine tidligere prosjekter!
+                <h2 className="mt-2">
+                    <MovingText
+                        text="Her er mine tidligere prosjekter!"
+                        textSize="mt-2 text-l md:text-2xl"
+                    />
                 </h2>
             </header>
             <main
-                className="max-w-6xl mx-auto mt-14 text-greyText"
+                className="max-w-6xl mx-auto mt-14 text-greyText md:text-lg"
             >
                 <section
                     className="flex flex-wrap justify-center gap-16"
@@ -60,7 +63,7 @@ export default function Projects({ data }) {
 
                                     <div>
                                         <h3
-                                            className="text-lg font-medium text-pinkText"
+                                            className="text-lg md:text-xl font-medium text-pinkText"
                                         >
                                             {item.title}
                                         </h3>
@@ -92,13 +95,13 @@ export default function Projects({ data }) {
                                         Les mer
                                     </button>
                                     {cardModal === true && (
-                                        <div 
+                                        <div
                                             className="fixed top-0 left-0 z-20 flex items-center justify-center w-full h-full text-greyText backdrop-blur-[5px]"
                                         >
-                                            <div 
+                                            <div
                                                 className="grid gap-8 relative z-30 lg:w-[70%] md:w-2/3 w-[90%] lg:p-24 xs:p-8 p-2 bg-cardBG rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-fit"
                                             >
-                                                <h2 
+                                                <h2
                                                     className="text-lg font-medium text-pinkText mt-5 mx-2"
                                                 >
                                                     {item.title}
@@ -119,7 +122,7 @@ export default function Projects({ data }) {
                                                     {item.tag.map((list) => {
                                                         console.log(list);
                                                         return (
-                                                            <li 
+                                                            <li
                                                                 className="mr-5"
                                                             >
                                                                 {list.name}

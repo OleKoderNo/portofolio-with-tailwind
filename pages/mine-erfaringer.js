@@ -7,7 +7,7 @@ function ExperienceItem({ title, date, description }) {
             className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)]"
         >
             <h3
-                className="text-lg font-medium text-pinkText"
+                className="text-lg font-medium text-pinkText md:text-xl"
             >
                 {title}
             </h3>
@@ -94,7 +94,7 @@ export default function Experience() {
                 </h2>
             </header>
             <main
-                className="max-w-6xl mx-auto text-greyText"
+                className="max-w-6xl mx-auto text-greyText md:text-lg"
             >
                 <section>
                     <h2
