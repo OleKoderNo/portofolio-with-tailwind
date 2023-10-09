@@ -28,6 +28,8 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
+
+      {/* Header section with animated text */}
       <header
         className="pb-8 mx-auto font-bold text-center"
       >
@@ -44,6 +46,7 @@ export default function Home() {
           />
         </h2>
       </header>
+      
       <main
         className="mx-auto max-w-7xl md:text-lg"
       >
@@ -51,7 +54,7 @@ export default function Home() {
           className="justify-around md:flex"
         >
           <section>
-            
+
             {/* Information card */}
             <div
               className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px] md:max-h-[500px]"
