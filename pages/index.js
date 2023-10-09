@@ -13,8 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title
-        >
+        <title>
           Ole sin portofolio
         </title>
         <meta
@@ -58,7 +57,9 @@ export default function Home() {
               className="md:mx-0 block w-64 py-6 px-8 mx-auto bg-cardBG text-greyText rounded-[20px] shadow-[0px_0_10px_rgba(0,0,0,0.8)] max-h-[420px]"
             >
 
-              <p>
+              <p
+              aria-hidden="true"
+              >
                 &lt;
                 <span
                   className=" text-pinkText"
@@ -67,32 +68,42 @@ export default function Home() {
                 </span>
               </p>
               <p
-                className="pl-3 "
+                className="pl-3"
+                aria-hidden="true"
               >
                 id=
               </p>
               <p
                 className="pl-3 text-blueText"
+                aria-hidden="true"
               >
                 "Ole Håvard
               </p>
               <p
                 className="pl-3 text-blueText"
+                aria-hidden="true"
               >
                 Furuseth Bergan"
               </p>
               <p
                 className="pl-3"
+                aria-hidden="true"
               >
                 className=
               </p>
               <p
                 className="pl-3 text-blueText"
+                aria-hidden="true"
               >
                 "Frontend Developer"
               </p>
-              <p>&gt;</p>
-              <p className="pl-3">
+              <p aria-hidden="true">
+                &gt;
+                </p>
+              <p 
+              className="pl-3"
+              aria-hidden="true"
+              >
                 &lt;
                 <span
                   className=" text-pinkText"
@@ -109,6 +120,7 @@ export default function Home() {
               />
               <p
                 className="pl-3"
+                aria-hidden="true"
               >
                 &lt;/
                 <span
@@ -118,7 +130,7 @@ export default function Home() {
                 </span>
                 &gt;
               </p>
-              <p>
+              <p aria-hidden="true">
                 &lt;/&nbsp;
                 <span
                   className=" text-pinkText"
